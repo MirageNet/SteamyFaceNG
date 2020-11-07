@@ -1,0 +1,16 @@
+{
+    "name": "com.mirrorng.steamy",
+    "displayName": "MirrorNG SteamyNG",
+    "version": "0.0.1",
+    "unity": "2020.1",
+    "description": "Steam transport for MirrorNG",
+    "author": "MirrorNG",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MirrorNG/FizzySteamyMirror.git"
+    },
+    "dependencies": {
+        "com.cysharp.unitask": "2.0.36",
+        "com.mirrorng.mirrorng": "54.1.1"
+    }
+}

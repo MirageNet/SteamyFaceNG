@@ -30,9 +30,9 @@ Host
 To be able to have your game working you need to make sure you have Steam running in the background. SteamManager will print a Debug Message if it initializes correctly.
 Client
 
-Before sending your game to your buddy make sure you have your steamID64 ready. To find your steamID64 the transport prints the hosts steamID64 in the console when the server has started.
+Before sending your game to your buddy make sure you have your steamID64 ready.
 
-    Send the game to your buddy. The transport shows your Steam User ID after you have started a server.
+    Send the game to your buddy.
     Your buddy needs your steamID64 to be able to connect.
     Place the steamID64 into "localhost" then click "Client"
     Then they will be connected to you.

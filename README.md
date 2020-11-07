@@ -39,6 +39,6 @@ Before sending your game to your buddy make sure you have your steamID64 ready. 
 
 Testing your game locally
 
-You cant connect to yourself locally while using SteamyNG since it's using steams P2P. If you want to test your game locally you'll have to use "Telepathy Transport" instead of "SteamyNG".
+You cant connect to yourself locally while using SteamyNG since it's using steams P2P. If you want to test your game locally you'll have to use "Telepathy Transport" instead of "SteamyFaceNG".
 
 Thanks to all developers of the original code for this work. I have just made it work for MirrorNG the original creators deserve the thanks

@@ -31,6 +31,7 @@ namespace Mirror.FizzySteam
         private int _clientConnectionTimeout = 30;
 
         private SteamServer _server;
+        private AutoResetUniTaskCompletionSource _listenCompletionSource;
         private SteamConnection _client;
 
         public Action<ErrorCodes, string> Error;
@@ -78,7 +79,9 @@ namespace Mirror.FizzySteam
 
             _server.StartListening();
 
-            return UniTask.CompletedTask;
+            _listenCompletionSource = AutoResetUniTaskCompletionSource.Create();
+
+            return _listenCompletionSource.Task;
         }
 
         /// <summary>

@@ -31,9 +31,8 @@ namespace Mirror.FizzySteam
         public SteamServer(SteamOptions options, Transport transport) : base(options)
         {
             Options = options;
-            _connectedSteamUsers = new Dictionary<SteamId, SteamConnection>(Options.MaxConnections);
-
             _transport = transport;
+            _connectedSteamUsers = new Dictionary<SteamId, SteamConnection>();
         }
 
         /// <summary>
@@ -78,6 +77,10 @@ namespace Mirror.FizzySteam
             if (Logger.logEnabled) Logger.Log("SteamServer shutting down.");
 
             base.Disconnect();
+            
+            _connectedSteamUsers.Clear();
+            SteamNetworking.OnP2PSessionRequest = null;
+            SteamNetworking.OnP2PConnectionFailed = null;
         }
 
         /// <summary>

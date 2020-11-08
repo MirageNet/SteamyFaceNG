@@ -75,7 +75,7 @@ namespace Mirror.FizzySteam
                 Channels = Channels
             };
 
-            _server = new SteamServer(op);
+            _server = new SteamServer(op, this);
 
             _server.StartListening();
 

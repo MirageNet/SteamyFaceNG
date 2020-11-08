@@ -73,9 +73,9 @@ namespace Mirror.FizzySteam
 
                 if (Logger.logEnabled)
                     Logger.LogError($"SteamConnection error: {ex.Message}");
-            }
 
-            Disconnect();
+                Disconnect();
+            }
         }
 
         #region Overrides of SteamCommon

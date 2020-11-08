@@ -1,13 +1,13 @@
 {
-    "name": "com.mirrorng.steamy",
+    "name": "com.mirrorng.steamyface",
     "displayName": "MirrorNG SteamyNG",
     "version": "0.0.1",
     "unity": "2020.1",
-    "description": "Steam transport for MirrorNG",
+    "description": "Steam transport for MirrorNG using facepunch",
     "author": "MirrorNG",
     "repository": {
         "type": "git",
-        "url": "https://github.com/MirrorNG/FizzySteamyMirror.git"
+        "url": "https://github.com/MirrorNG/SteamyFaceNG.git"
     },
     "dependencies": {
         "com.cysharp.unitask": "2.0.36",

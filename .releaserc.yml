@@ -1,0 +1,18 @@
+{
+    "plugins": [
+        "@semantic-release/github",
+        "@semantic-release/release-notes-generator", 
+        "@semantic-release/commit-analyzer",
+        ["@semantic-release/changelog", {
+            "changelogFile": "Assets/Mirror/Runtime/Transport/FizzyFaceMirror/CHANGELOG.md",
+        }],
+        ["@semantic-release/npm", {
+            "npmPublish": false,
+            "pkgRoot": "Assets/Mirror/Runtime/Transport/FizzyFaceMirror"
+        }],
+        ["@semantic-release/git", {
+            "assets": ["Assets/Mirror/Runtime/Transport/FizzyFaceMirror/package.json", "Assets/Mirror/Runtime/Transport/FizzyFaceMirror/CHANGELOG.md"],
+            "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }],
+    ]
+}

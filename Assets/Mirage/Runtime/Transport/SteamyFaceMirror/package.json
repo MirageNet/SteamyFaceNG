@@ -1,7 +1,7 @@
 {
     "name": "com.miragenet.steamyface",
     "displayName": "Mirage SteamyNG",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "unity": "2020.1",
     "description": "Steam transport for Mirage using facepunch",
     "author": "Mirage",

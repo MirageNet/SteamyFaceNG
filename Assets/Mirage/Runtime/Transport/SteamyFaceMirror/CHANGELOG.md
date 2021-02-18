@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.0...v1.0.1) (2021-02-18)
+
+
+### Bug Fixes
+
+* Folder ([1106608](https://github.com/MirageNet/SteamyFaceNG/commit/1106608eb5221aa0452a0a5165c4b9d2cc7c55d9))
+* Folder name. ([7270318](https://github.com/MirageNet/SteamyFaceNG/commit/727031835155474afed89b0a92f3d495613b8f39))
+
 # 1.0.0 (2021-01-15)
 
 

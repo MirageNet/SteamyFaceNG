@@ -14,7 +14,7 @@ SteamyFaceNG
 
 Mirrage docs and the official community Discord.
 
-SteamyNG brings together Steam and MirrorNG utilising Async of a Steam P2P network transport layer for MirrorNG.
+SteamyNG brings together Steam and Mirage utilising Async of a Steam P2P network transport layer for Mirage.
 Dependencies
 
 Both of these projects need to be installed and working before you can use this transport.
@@ -30,11 +30,11 @@ The preferred installation method is Unity Package manager.
 If you are using unity 2019.3 or later: 
 
 1) Open your project in unity
-2) Install [MirrorNG](https://github.com/MirrorNG/MirrorNG)
+2) Install [Mirage](https://github.com/MirageNet/Mirage)
 3) Click on Windows -> Package Manager
 4) Click on the plus sign on the left and click on "Add package from git URL..."
-5) enter https://github.com/MirageNet/SteamyFaceNG.git?path=/Assets/Mirror/Runtime/Transport/SteamyFaceMirror
-6) Unity will download and install MirrorNG SteamyFaceNG
+5) enter https://github.com/MirageNet/SteamyFaceNG.git?path=/Assets/Mirage/Runtime/Transport/SteamyFaceMirror
+6) Unity will download and install Mirage SteamyFaceNG
 
 Note: The default 480(Spacewar) appid is a very grey area, technically, it's not allowed but they don't really do anything about it. When you have your own appid from steam then replace the 480 with your own game appid. If you know a better way around this please make a Issue ticket.
 Host

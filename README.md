@@ -12,7 +12,7 @@
 
 SteamyFaceNG
 
-MirrorNG docs and the official community Discord.
+Mirrage docs and the official community Discord.
 
 SteamyNG brings together Steam and MirrorNG utilising Async of a Steam P2P network transport layer for MirrorNG.
 Dependencies

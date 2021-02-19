@@ -10,7 +10,7 @@ using UnityEngine;
 
 #endregion
 
-namespace Mirror.FizzySteam
+namespace Mirage.FizzySteam
 {
     public abstract class SteamCommon
     {

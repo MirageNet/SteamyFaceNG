@@ -4,7 +4,7 @@ using Steamworks;
 
 #endregion
 
-namespace Mirror.FizzySteam
+namespace Mirage.FizzySteam
 {
     public struct SteamOptions
     {

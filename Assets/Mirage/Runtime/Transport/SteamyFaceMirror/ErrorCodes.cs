@@ -1,4 +1,4 @@
-﻿namespace Mirror.FizzySteam
+﻿namespace Mirage.FizzySteam
 {
     public enum ErrorCodes : byte
     {

@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.2...v1.0.3) (2021-02-19)
+
+
+### Bug Fixes
+
+* Fix Mirage compatibility ([6de7f76](https://github.com/MirageNet/SteamyFaceNG/commit/6de7f76e5e9868432d8a21baaab547847aa4b7f2))
+* readme ([1a46fe5](https://github.com/MirageNet/SteamyFaceNG/commit/1a46fe508bbff177e3465b638a18690cd3f810e3))
+* release package ([e7dabc7](https://github.com/MirageNet/SteamyFaceNG/commit/e7dabc789a0e7233fbf55803a2a0db5e01f1303f))
+
 ## [1.0.2](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.1...v1.0.2) (2021-02-19)
 
 

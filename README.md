@@ -12,7 +12,7 @@
 
 SteamyFaceNG
 
-Mirrage docs and the official community Discord.
+Mirage docs and the official community Discord.
 
 SteamyNG brings together Steam and Mirage utilising Async of a Steam P2P network transport layer for Mirage.
 Dependencies

@@ -9,7 +9,8 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Facepunch.Steamworks.Win64.dll"
+        "Facepunch.Steamworks.Win64.dll",
+        "Facepunch.Steamworks.Posix.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

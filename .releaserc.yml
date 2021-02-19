@@ -4,14 +4,14 @@
         "@semantic-release/release-notes-generator", 
         "@semantic-release/commit-analyzer",
         ["@semantic-release/changelog", {
-            "changelogFile": "Assets/Mirage/Runtime/Transport/SteamyFaceMirror/CHANGELOG.md",
+            "changelogFile": "Assets/Mirage/Runtime/Transport/SteamyFaceNG/CHANGELOG.md",
         }],
         ["@semantic-release/npm", {
             "npmPublish": false,
-            "pkgRoot": "Assets/Mirage/Runtime/Transport/SteamyFaceMirror"
+            "pkgRoot": "Assets/Mirage/Runtime/Transport/SteamyFaceNG"
         }],
         ["@semantic-release/git", {
-            "assets": ["Assets/Mirage/Runtime/Transport/SteamyFaceMirror/package.json", "Assets/Mirage/Runtime/Transport/SteamyFaceMirror/CHANGELOG.md"],
+            "assets": ["Assets/Mirage/Runtime/Transport/SteamyFaceNG/package.json", "Assets/Mirage/Runtime/Transport/SteamyFaceNG/CHANGELOG.md"],
             "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }],
     ]

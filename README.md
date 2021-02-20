@@ -11,7 +11,8 @@
 [![Build](https://github.com/MirageNet/SteamyFaceNG/workflows/CI/badge.svg)](https://github.com/MirageNet/SteamyFaceNG/actions?query=workflow%3ACI)
 
 SteamyFaceNG brings together Steam and Mirage utilising Async of a Steam P2P network transport layer for Mirage.
-Dependencies
+
+## Dependencies
 
 Both of these projects need to be installed and working before you can use this transport.
 

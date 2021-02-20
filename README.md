@@ -1,3 +1,4 @@
+# SteamyFaceNG
 
 [![Documentation](https://img.shields.io/badge/documentation-brightgreen.svg)](https://miragenet.github.io/Mirage/)
 [![Forum](https://img.shields.io/badge/forum-brightgreen.svg)](https://forum.unity.com/threads/mirror-networking-for-unity-aka-hlapi-community-edition.425437/)
@@ -9,11 +10,7 @@
 
 [![Build](https://github.com/MirageNet/SteamyFaceNG/workflows/CI/badge.svg)](https://github.com/MirageNet/SteamyFaceNG/actions?query=workflow%3ACI)
 
-SteamyFaceNG
-
-Mirage docs and the official community Discord.
-
-SteamyNG brings together Steam and Mirage utilising Async of a Steam P2P network transport layer for Mirage.
+SteamyFaceNG brings together Steam and Mirage utilising Async of a Steam P2P network transport layer for Mirage.
 Dependencies
 
 Both of these projects need to be installed and working before you can use this transport.
@@ -34,10 +31,12 @@ If you are using unity 2019.3 or later:
 6) Unity will download and install Mirage SteamyFaceNG
 
 Note: The default 480 (Spacewar) AppID is a very grey area, technically, it's not allowed but they don't really do anything about it. When you have your own AppID from Steam then replace the 480 with your own game AppID. If you know a better way around this, please make an Issue ticket.
-Host
+
+### Host
 
 To be able to have your game working you need to make sure you have Steam running in the background.
-Client
+
+### Client
 
 Before sending your game to your buddy make sure you have your steamID64 ready.
 

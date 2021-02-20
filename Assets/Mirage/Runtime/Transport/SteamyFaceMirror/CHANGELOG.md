@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.3...v1.0.4) (2021-02-20)
+
+
+### Bug Fixes
+
+* add meta for CHANGELOG ([ace4090](https://github.com/MirageNet/SteamyFaceNG/commit/ace4090b70b073669716f37b08afd5810f41d337))
+* readme ([f5c59b3](https://github.com/MirageNet/SteamyFaceNG/commit/f5c59b36e658b5dec7fd3065819d5e290dc29ae0))
+
 ## [1.0.3](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.2...v1.0.3) (2021-02-19)
 
 

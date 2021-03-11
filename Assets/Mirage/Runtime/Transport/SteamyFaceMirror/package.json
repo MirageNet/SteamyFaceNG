@@ -3,7 +3,7 @@
     "displayName": "Mirage SteamyFaceNG",
     "version": "1.0.4",
     "unity": "2020.1",
-    "description": "Steam transport for Mirage using Facepunch Steamworks",
+    "description": "Steam transport for Mirage using Facepunch SteamWorks",
     "author": "Mirage",
     "repository": {
         "type": "git",

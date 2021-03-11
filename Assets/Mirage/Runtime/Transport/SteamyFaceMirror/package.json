@@ -11,6 +11,6 @@
     },
     "dependencies": {
         "com.cysharp.unitask": "2.0.36",
-        "com.miragenet.mirage": "66.2.2"
+        "com.miragenet.mirage": "74.0.0"
     }
 }

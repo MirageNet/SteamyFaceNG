@@ -1,9 +1,9 @@
 {
     "name": "com.miragenet.steamyface",
-    "displayName": "Mirage SteamyNG",
+    "displayName": "Mirage SteamyFaceNG",
     "version": "1.0.4",
     "unity": "2020.1",
-    "description": "Steam transport for Mirage using facepunch",
+    "description": "Steam transport for Mirage using Facepunch",
     "author": "Mirage",
     "repository": {
         "type": "git",

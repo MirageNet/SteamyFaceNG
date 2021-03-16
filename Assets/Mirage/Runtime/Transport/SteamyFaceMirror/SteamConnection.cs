@@ -6,6 +6,7 @@ using System.Net;
 using Cysharp.Threading.Tasks;
 using Steamworks;
 using UnityEngine;
+using Mirage.Logging;
 
 #endregion
 

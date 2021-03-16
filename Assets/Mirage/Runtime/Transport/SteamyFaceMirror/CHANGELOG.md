@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v2.0.0...v3.0.0) (2021-03-16)
+
+
+### Bug Fixes
+
+* using Mirage.Logging namespace for LogFactory ([8b0d2c8](https://github.com/MirageNet/SteamyFaceNG/commit/8b0d2c864c1ebe27030bf4d21d9a7a4d72367af6))
+
+
+### BREAKING CHANGES
+
+* Requires Mirage 80.0.0+
+
 # [2.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.4...v2.0.0) (2021-03-11)
 
 

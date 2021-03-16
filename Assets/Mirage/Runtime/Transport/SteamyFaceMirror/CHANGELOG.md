@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.4...v2.0.0) (2021-03-11)
+
+
+### Code Refactoring
+
+* use Send instead of SendAsync ([261c841](https://github.com/MirageNet/SteamyFaceNG/commit/261c841e7e3f22f692f229233e087b4c82ce969f))
+
+
+### BREAKING CHANGES
+
+* Compatibility with Mirage 74.0.0+
+
 ## [1.0.4](https://github.com/MirageNet/SteamyFaceNG/compare/v1.0.3...v1.0.4) (2021-02-20)
 
 

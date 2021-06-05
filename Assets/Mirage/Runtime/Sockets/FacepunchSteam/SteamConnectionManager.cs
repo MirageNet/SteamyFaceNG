@@ -19,7 +19,7 @@ namespace Mirage.Sockets.FacepunchSteam {
         }
 
         public unsafe void Send(byte[] data, int length, SteamEndPoint endPoint) {
-            Debug.Log("Sending bytes: " + data[0] + "-" + data[1] + "-" + data[2]);
+            //Debug.Log("Sending bytes: " + data[0] + "-" + data[1] + "-" + data[2]);
 
             fixed (byte* aPtr = data)
             {

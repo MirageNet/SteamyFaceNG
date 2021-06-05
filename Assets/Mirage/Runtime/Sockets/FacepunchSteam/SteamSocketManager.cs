@@ -12,7 +12,11 @@ namespace Mirage.Sockets.FacepunchSteam {
 
         public bool Poll() {
             SteamServer.RunCallbacks();
-            Debug.Log(Receive());
+            Receive();
+            /*foreach (var conn in Connected) {
+                Debug.Log(conn);
+                Debug.Log(conn.QuickStatus());
+            }*/
             return messageQueue.Count > 0;
         }
 
@@ -40,11 +44,13 @@ namespace Mirage.Sockets.FacepunchSteam {
         }
 
         public override void OnConnecting(Connection connection, ConnectionInfo data) {
+            base.OnConnecting(connection, data);
             connection.Accept();
             Debug.Log($"{data.Identity.SteamId} is connecting");
         }
 
         public override void OnConnected(Connection connection, ConnectionInfo data) {
+            base.OnConnected(connection, data);
             Debug.Log($"{data.Identity.SteamId} has joined the game");
             connections.Add(data.Identity.SteamId, connection);
         }

@@ -1,3 +1,4 @@
+using System;
 using System.Net;
 using Mirage.SocketLayer;
 using Steamworks;
@@ -43,7 +44,7 @@ namespace Mirage.Sockets.FacepunchSteam {
             Debug.Log("Receive");
             SteamMessage message = manager.GetNextMessage();
 
-            buffer = message.data;
+            Buffer.BlockCopy(message.data, 0, buffer, 0, message.data.Length);
             tmpEndPoint.address = message.address;
             endPoint = tmpEndPoint;
 

@@ -1,16 +1,16 @@
 {
-    "name": "SteamyFaceNG",
+    "name": "Mirage.Sockets.FacepunchSteam",
+    "rootNamespace": "",
     "references": [
-        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:c0b2064c294eb174c9f3f7da398eb677",
         "GUID:30817c1a0e6d646d99c048fc403f5979"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Facepunch.Steamworks.Win64.dll",
-        "Facepunch.Steamworks.Posix.dll"
+        "Facepunch.Steamworks.Win64.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

@@ -48,7 +48,7 @@ namespace Mirage.Sockets.FacepunchSteam {
             tmpEndPoint.address = message.address;
             endPoint = tmpEndPoint;
 
-            return buffer.Length;
+            return message.data.Length;
         }
 
         public void Send(EndPoint endPoint, byte[] packet, int length) {

@@ -8,11 +8,14 @@ namespace Mirage.Sockets.FacepunchSteam {
     public class SteamSocket : ISocket {
         ISteamManager manager;
         SteamEndPoint tmpEndPoint = new SteamEndPoint();
+        SteamSocketFactory socketFactory;
+
+        public SteamSocket(SteamSocketFactory factory) {
+            socketFactory = factory;
+        }
 
         public void Bind(EndPoint endPoint) {
-
-            SteamServer.Init(480, new SteamServerInit("Game", "Default Game")
-            {
+            SteamServer.Init(socketFactory.appID, new SteamServerInit("Game", "Default Game") {
                 DedicatedServer = false,
                 GamePort = 27015,
                 IpAddress = IPAddress.Any,
@@ -22,7 +25,6 @@ namespace Mirage.Sockets.FacepunchSteam {
                 VersionString = Application.version
             }, false);
             manager = SteamNetworkingSockets.CreateRelaySocket<SteamSocketManager>();
-            Debug.Log("Steam bound");
         }
 
         public void Close() {
@@ -32,16 +34,15 @@ namespace Mirage.Sockets.FacepunchSteam {
         public void Connect(EndPoint endPoint) {
             SteamEndPoint steamEndPoint = (SteamEndPoint)endPoint;
             manager = SteamNetworkingSockets.ConnectRelay<SteamConnectionManager>(steamEndPoint.address);
-            Debug.Log("Connected to " + steamEndPoint.address);
         }
 
         public bool Poll() {
             SteamClient.RunCallbacks();
+
             return manager.Poll();
         }
 
         public int Receive(byte[] buffer, out EndPoint endPoint) {
-            Debug.Log("Receive");
             SteamMessage message = manager.GetNextMessage();
 
             Buffer.BlockCopy(message.data, 0, buffer, 0, message.data.Length);

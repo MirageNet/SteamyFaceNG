@@ -8,14 +8,14 @@ namespace Mirage.Sockets.FacepunchSteam {
     public class SteamSocket : ISocket {
         ISteamManager manager;
         SteamEndPoint tmpEndPoint = new SteamEndPoint();
-        SteamSocketFactory socketFactory;
+        readonly SteamSocketFactory socketFactory;
 
         public SteamSocket(SteamSocketFactory factory) {
             socketFactory = factory;
         }
 
         public void Bind(EndPoint endPoint) {
-            SteamServer.Init(socketFactory.appID, new SteamServerInit("Game", "Default Game") {
+            SteamServer.Init(socketFactory.AppID, new SteamServerInit("Game", Application.productName) {
                 DedicatedServer = false,
                 GamePort = 27015,
                 IpAddress = IPAddress.Any,
@@ -37,7 +37,7 @@ namespace Mirage.Sockets.FacepunchSteam {
         }
 
         public bool Poll() {
-            SteamClient.RunCallbacks();
+            if (socketFactory.RunCallbacks) SteamClient.RunCallbacks();
 
             return manager.Poll();
         }

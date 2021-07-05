@@ -14,7 +14,7 @@ namespace Mirage.Sockets.FacepunchSteam {
             socketFactory = factory;
         }
 
-        public void Bind(EndPoint endPoint) {
+        public void Bind(IEndPoint endPoint) {
             SteamServer.Init(socketFactory.AppID, new SteamServerInit("Game", Application.productName) {
                 DedicatedServer = false,
                 GamePort = 27015,
@@ -31,7 +31,7 @@ namespace Mirage.Sockets.FacepunchSteam {
             manager.Dispose();
         }
 
-        public void Connect(EndPoint endPoint) {
+        public void Connect(IEndPoint endPoint) {
             SteamEndPoint steamEndPoint = (SteamEndPoint)endPoint;
             manager = SteamNetworkingSockets.ConnectRelay<SteamConnectionManager>(steamEndPoint.address);
         }
@@ -42,7 +42,7 @@ namespace Mirage.Sockets.FacepunchSteam {
             return manager.Poll();
         }
 
-        public int Receive(byte[] buffer, out EndPoint endPoint) {
+        public int Receive(byte[] buffer, out IEndPoint endPoint) {
             SteamMessage message = manager.GetNextMessage();
 
             Buffer.BlockCopy(message.data, 0, buffer, 0, message.data.Length);
@@ -52,7 +52,7 @@ namespace Mirage.Sockets.FacepunchSteam {
             return message.data.Length;
         }
 
-        public void Send(EndPoint endPoint, byte[] packet, int length) {
+        public void Send(IEndPoint endPoint, byte[] packet, int length) {
             tmpEndPoint = (SteamEndPoint)endPoint;
             manager.Send(packet, length, tmpEndPoint);
         }

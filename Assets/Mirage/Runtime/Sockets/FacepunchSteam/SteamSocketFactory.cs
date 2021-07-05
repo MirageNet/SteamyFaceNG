@@ -1,4 +1,3 @@
-using System.Net;
 using Mirage.SocketLayer;
 using Steamworks;
 using UnityEngine;
@@ -33,18 +32,20 @@ namespace Mirage.Sockets.FacepunchSteam {
             return new SteamSocket(this);
         }
 
-        public override EndPoint GetBindEndPoint() {
-            return new SteamEndPoint { address = SteamClient.SteamId };
+        public override IEndPoint GetBindEndPoint() {
+            return new SteamEndPoint(SteamClient.SteamId);
         }
 
-        public override EndPoint GetConnectEndPoint(string address = null, ushort? port = null) {
+        public override IEndPoint GetConnectEndPoint(string address = null, ushort? port = null) {
             SteamId steamId = ulong.Parse(address);
 
-            return new SteamEndPoint { address = steamId };
+            return new SteamEndPoint(steamId);
         }
 
         void OnDestroy() {
-            SteamClient.Shutdown();
+            if (InitSteam) {
+                SteamClient.Shutdown();
+            }
         }
     }
 }

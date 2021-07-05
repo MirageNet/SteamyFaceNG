@@ -11,7 +11,7 @@
 This package provides Steam socket for [Mirage](https://github.com/MirageNet/Mirage) using [Facepunch Steamworks](https://github.com/facepunch/Facepunch.Steamworks).
 
 ## Dependencies
-- **Mirage** 96.3.0+
+- **Mirage** 99.0.2+
 - **Facepunch Steamworks** (included)
 - **.NET 4.x**
 

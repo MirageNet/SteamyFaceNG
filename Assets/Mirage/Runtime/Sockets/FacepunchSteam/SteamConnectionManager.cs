@@ -72,18 +72,9 @@ namespace Mirage.Sockets.FacepunchSteam {
             if (logger.LogEnabled()) Debug.Log("Steam Client disconnected");
 
             messageQueue.Enqueue(new SteamMessage {
-                data = CreateDisconnectPacket(),
+                data = SteamSocket.CreateDisconnectPacket(),
                 address = ConnectionInfo.Identity.SteamId
             });
-        }
-
-        byte[] CreateDisconnectPacket() {
-            byte[] data = new byte[3];
-            data[0] = (byte)PacketType.Command;
-            data[1] = (byte)Commands.Disconnect;
-            data[2] = (byte)DisconnectReason.RequestedByRemotePeer;
-
-            return data;
         }
     }
 }

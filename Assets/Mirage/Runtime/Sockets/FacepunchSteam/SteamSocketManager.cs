@@ -14,7 +14,7 @@ namespace Mirage.Sockets.FacepunchSteam {
         protected readonly Dictionary<SteamId, Connection> connections = new Dictionary<SteamId, Connection>();
 
         public bool Poll() {
-            SteamServer.RunCallbacks();
+            //SteamServer.RunCallbacks();
             Receive();
             
             return messageQueue.Count > 0;
@@ -44,7 +44,7 @@ namespace Mirage.Sockets.FacepunchSteam {
 
             connections.Clear();
             Close();
-            SteamServer.Shutdown();
+            //SteamServer.Shutdown();
         }
 
         public override void OnConnecting(Connection connection, ConnectionInfo data) {
@@ -63,6 +63,11 @@ namespace Mirage.Sockets.FacepunchSteam {
             base.OnDisconnected(connection, data);
             connections.Remove(data.Identity.SteamId);
             if (logger.LogEnabled()) Debug.Log($"Steam Server: {data.Identity.SteamId} disconnected");
+
+            messageQueue.Enqueue(new SteamMessage {
+                address = data.Identity.SteamId,
+                data = SteamSocket.CreateDisconnectPacket()
+            });
         }
 
         public override void OnMessage(Connection connection, NetIdentity identity, IntPtr data, int size, Int64 messageNum, Int64 recvTime, int channel) {

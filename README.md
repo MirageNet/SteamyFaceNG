@@ -32,11 +32,11 @@ The preferred installation method is Unity Package Manager.
 5) Enter https://github.com/MirageNet/SteamyFaceNG.git?path=/Assets/Mirage/Runtime/Sockets/FacepunchSteam
 
 ### Adding the socket
-1) Open your network object (which contains the NetworkServer, NetworkClient etc.) and add `FacepunchSteamSocketFactory` component.
+1) Open your network object (which contains the `NetworkServer`, `NetworkClient` etc.) and add `SteamSocketFactory` component.
 2) Setup your AppID and other settings as needed.
-3) Assign this component as a reference to the `Socket Factory` fields of NetworkServer and NetworkClient.
+3) Assign this component as a reference to the `Socket Factory` fields of `NetworkServer` and `NetworkClient`.
 
-Note: The default 480 (Spacewar) AppID is a very grey area, technically, it's not allowed but they don't really do anything about it. When you have your own AppID from Steam then replace the 480 with your own game AppID. If you know a better way around this, please make an Issue ticket.
+> Note: The default 480 (Spacewar) AppID is a very grey area, technically, it's not allowed but they don't really do anything about it. When you have your own AppID from Steam then replace the 480 with your own game AppID. If you know a better way around this, please make an Issue ticket.
 
 ## Using the socket
 ### Host

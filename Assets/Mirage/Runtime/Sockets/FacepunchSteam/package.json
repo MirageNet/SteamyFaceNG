@@ -1,16 +1,15 @@
 {
     "name": "com.miragenet.steamyface",
-    "displayName": "Mirage SteamyFaceNG",
+    "displayName": "Mirage Facepunch Steam Socket",
     "version": "3.0.0",
     "unity": "2020.1",
-    "description": "Steam transport for Mirage using Facepunch SteamWorks",
+    "description": "Steam socket for Mirage using Facepunch SteamWorks",
     "author": "Mirage",
     "repository": {
         "type": "git",
         "url": "https://github.com/MirageNet/SteamyFaceNG.git"
     },
     "dependencies": {
-        "com.cysharp.unitask": "2.0.36",
-        "com.miragenet.mirage": "80.0.0"
+        "com.miragenet.mirage": "99.0.2"
     }
 }

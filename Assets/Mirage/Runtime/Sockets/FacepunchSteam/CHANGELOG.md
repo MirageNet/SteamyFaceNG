@@ -1,3 +1,30 @@
+# [4.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v3.0.0...v4.0.0) (2021-07-09)
+
+
+### Features
+
+* Mirage Socket support ([#8](https://github.com/MirageNet/SteamyFaceNG/issues/8)) ([18bf024](https://github.com/MirageNet/SteamyFaceNG/commit/18bf02459bc3dbbad489c584042e5f1597abb7c9))
+
+
+### BREAKING CHANGES
+
+* switched to new ISocket API, requires Mirage 96+
+
+* docs: Updated README
+
+* feat: Added options to control Steam init and running callbacks
+
+* feat: Support latest Mirage
+* SteamEndPoint implements IEndPoint
+
+* use struct instead of class
+
+* Update deps
+
+* fix: Prevent peer from trying to send data on closed connections
+
+* doc: readme
+
 # [3.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v2.0.0...v3.0.0) (2021-03-16)
 
 

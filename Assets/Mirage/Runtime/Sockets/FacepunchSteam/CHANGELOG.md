@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.0...v4.0.1) (2021-07-20)
+
+
+### Bug Fixes
+
+* build on Linux no longer fails ([ca0822c](https://github.com/MirageNet/SteamyFaceNG/commit/ca0822cdd0adbbb4fdb54d47b6e593e81736b314))
+
 # [4.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v3.0.0...v4.0.0) (2021-07-09)
 
 

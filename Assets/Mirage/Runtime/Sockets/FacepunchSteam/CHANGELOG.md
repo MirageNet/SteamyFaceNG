@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.1...v4.0.2) (2021-07-21)
+
+
+### Bug Fixes
+
+* update Facepunch libs for Linux ([230624c](https://github.com/MirageNet/SteamyFaceNG/commit/230624cd20570066098cad280a52151327129d7c))
+
 ## [4.0.1](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.0...v4.0.1) (2021-07-20)
 
 

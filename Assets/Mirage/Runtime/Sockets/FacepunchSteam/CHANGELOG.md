@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.2...v4.0.3) (2021-07-21)
+
+
+### Bug Fixes
+
+* switched Facepunch.Posix to Linux ([48b02af](https://github.com/MirageNet/SteamyFaceNG/commit/48b02af3d029d2ed793a42369e7b4976fc61abef))
+
 ## [4.0.2](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.1...v4.0.2) (2021-07-21)
 
 

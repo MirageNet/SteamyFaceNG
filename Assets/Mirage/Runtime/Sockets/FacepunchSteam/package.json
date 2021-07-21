@@ -1,7 +1,7 @@
 {
     "name": "com.miragenet.steamyface",
     "displayName": "Mirage Facepunch Steam Socket",
-    "version": "4.0.2",
+    "version": "4.0.3",
     "unity": "2020.1",
     "description": "Steam socket for Mirage using Facepunch SteamWorks",
     "author": "Mirage",

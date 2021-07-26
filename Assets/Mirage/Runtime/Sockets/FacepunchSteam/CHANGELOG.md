@@ -1,3 +1,10 @@
+## [4.0.4](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.3...v4.0.4) (2021-07-26)
+
+
+### Performance Improvements
+
+* use class for SteamEndPoint to prevent boxing ([88b95bc](https://github.com/MirageNet/SteamyFaceNG/commit/88b95bc805b86d91e2d9a2115886b36159062459))
+
 ## [4.0.3](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.2...v4.0.3) (2021-07-21)
 
 

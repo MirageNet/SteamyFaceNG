@@ -3,8 +3,10 @@ using Mirage.SocketLayer;
 using Steamworks;
 
 namespace Mirage.Sockets.FacepunchSteam {
-    public struct SteamEndPoint : IEndPoint, IEquatable<SteamEndPoint> {
+    public class SteamEndPoint : IEndPoint, IEquatable<SteamEndPoint> {
         public SteamId address;
+
+        public SteamEndPoint() {}
 
         public SteamEndPoint(SteamId address) {
             this.address = address;

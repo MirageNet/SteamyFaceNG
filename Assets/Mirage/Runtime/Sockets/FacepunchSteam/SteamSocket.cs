@@ -54,8 +54,8 @@ namespace Mirage.Sockets.FacepunchSteam {
         }
 
         public void Send(IEndPoint endPoint, byte[] packet, int length) {
-            tmpEndPoint = (SteamEndPoint)endPoint;
-            manager.Send(packet, length, tmpEndPoint);
+            var steamEndPoint = (SteamEndPoint)endPoint;
+            manager.Send(packet, length, steamEndPoint);
         }
 
         public static byte[] CreateDisconnectPacket() {

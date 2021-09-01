@@ -1,3 +1,10 @@
+## [4.0.5](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.4...v4.0.5) (2021-09-01)
+
+
+### Bug Fixes
+
+* sends dont cause endpoint changes ([32fc25f](https://github.com/MirageNet/SteamyFaceNG/commit/32fc25f8568ac9a6e0e09b5633629f28cd68db6c))
+
 ## [4.0.4](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.3...v4.0.4) (2021-07-26)
 
 

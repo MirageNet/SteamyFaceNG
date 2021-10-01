@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.5...v5.0.0) (2021-10-01)
+
+
+### Bug Fixes
+
+* prevent KeyNotFoundException from Send in some edge cases ([e4c3c5a](https://github.com/MirageNet/SteamyFaceNG/commit/e4c3c5a26f501edd8414345531626bbf56c7a00c))
+
+
+### BREAKING CHANGES
+
+* SteamEndPoint.address renamed to SteamEndPoint.Address
+
 ## [4.0.5](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.4...v4.0.5) (2021-09-01)
 
 

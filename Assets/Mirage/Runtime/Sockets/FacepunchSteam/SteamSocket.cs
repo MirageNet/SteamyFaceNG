@@ -1,8 +1,6 @@
 using System;
-using System.Net;
 using Mirage.SocketLayer;
 using Steamworks;
-using UnityEngine;
 
 namespace Mirage.Sockets.FacepunchSteam {
     public class SteamSocket : ISocket {
@@ -34,7 +32,7 @@ namespace Mirage.Sockets.FacepunchSteam {
 
         public void Connect(IEndPoint endPoint) {
             SteamEndPoint steamEndPoint = (SteamEndPoint)endPoint;
-            manager = SteamNetworkingSockets.ConnectRelay<SteamConnectionManager>(steamEndPoint.address);
+            manager = SteamNetworkingSockets.ConnectRelay<SteamConnectionManager>(steamEndPoint.Address);
         }
 
         public bool Poll() {
@@ -46,11 +44,11 @@ namespace Mirage.Sockets.FacepunchSteam {
         public int Receive(byte[] buffer, out IEndPoint endPoint) {
             SteamMessage message = manager.GetNextMessage();
 
-            Buffer.BlockCopy(message.data, 0, buffer, 0, message.data.Length);
-            tmpEndPoint.address = message.address;
+            Buffer.BlockCopy(message.Data, 0, buffer, 0, message.Data.Length);
+            tmpEndPoint.Address = message.Address;
             endPoint = tmpEndPoint;
 
-            return message.data.Length;
+            return message.Data.Length;
         }
 
         public void Send(IEndPoint endPoint, byte[] packet, int length) {

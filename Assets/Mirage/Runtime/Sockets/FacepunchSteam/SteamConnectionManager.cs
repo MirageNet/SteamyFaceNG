@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Mirage.Logging;
-using Mirage.SocketLayer;
 using Steamworks;
 using Steamworks.Data;
 using UnityEngine;
@@ -11,7 +10,7 @@ namespace Mirage.Sockets.FacepunchSteam {
     public class SteamConnectionManager : ConnectionManager, ISteamManager {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(SteamConnectionManager));
 
-        protected readonly Queue<SteamMessage> messageQueue = new Queue<SteamMessage>();
+        readonly Queue<SteamMessage> messageQueue = new Queue<SteamMessage>();
 
         public bool Poll() {
             Receive();
@@ -61,8 +60,8 @@ namespace Mirage.Sockets.FacepunchSteam {
             Marshal.Copy(data, mIn, 0, size);
 
             messageQueue.Enqueue(new SteamMessage {
-                address = ConnectionInfo.Identity.SteamId,
-                data = mIn
+                Address = ConnectionInfo.Identity.SteamId,
+                Data = mIn
             });
         }
 
@@ -72,8 +71,8 @@ namespace Mirage.Sockets.FacepunchSteam {
             if (logger.LogEnabled()) Debug.Log("Steam Client disconnected");
 
             messageQueue.Enqueue(new SteamMessage {
-                data = SteamSocket.CreateDisconnectPacket(),
-                address = ConnectionInfo.Identity.SteamId
+                Data = SteamSocket.CreateDisconnectPacket(),
+                Address = ConnectionInfo.Identity.SteamId
             });
         }
     }

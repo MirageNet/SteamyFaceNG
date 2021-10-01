@@ -4,36 +4,38 @@ using Steamworks;
 
 namespace Mirage.Sockets.FacepunchSteam {
     public class SteamEndPoint : IEndPoint, IEquatable<SteamEndPoint> {
-        public SteamId address;
+        public SteamId Address;
 
         public SteamEndPoint() {}
 
         public SteamEndPoint(SteamId address) {
-            this.address = address;
+            Address = address;
         }
 
         public IEndPoint CreateCopy() {
-            return new SteamEndPoint(address);
+            return new SteamEndPoint(Address);
         }
 
         public override string ToString() {
-            return address.ToString();
+            return Address.ToString();
         }
 
         public override bool Equals(object obj) {
             if (obj is SteamEndPoint endPoint) {
-                return address == endPoint.address;
+                return Address == endPoint.Address;
             }
 
             return false;
         }
 
         public override int GetHashCode() {
-            return address.GetHashCode();
+            return Address.GetHashCode();
         }
 
         public bool Equals(SteamEndPoint other) {
-            return address == other.address;
+            if (other == null) return false;
+            
+            return Address == other.Address;
         }
     }
 }

@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v5.0.0...v6.0.0) (2022-05-11)
+
+
+### Bug Fixes
+
+* added MaxPacketSize to SteamSocketFactory ([e63c01b](https://github.com/MirageNet/SteamyFaceNG/commit/e63c01b22f42371a7737c3067a0856d526d8ccc4))
+
+
+### BREAKING CHANGES
+
+* Requires Mirage 120.0.0 or newer
+
 # [5.0.0](https://github.com/MirageNet/SteamyFaceNG/compare/v4.0.5...v5.0.0) (2021-10-01)
 
 

@@ -12,6 +12,8 @@ namespace Mirage.Sockets.FacepunchSteam {
         [Tooltip("Set this to false if you want to run Steam callbacks yourself.")]
         public bool RunCallbacks = true;
 
+        public override int MaxPacketSize => 1200;
+
         void Awake() {
             GetComponent<NetworkClient>().PeerConfig = new Config {
                 ConnectAttemptInterval = 1f,
